@@ -9,7 +9,7 @@ router.post('/', async (request, response) => {
     if (
       !request.body.title ||
       !request.body.author ||
-      /*!request.body.publisherB ||*/
+      !request.body.publisherB ||
       !request.body.publishYear
     ) {
       return response.status(400).send({
@@ -19,7 +19,7 @@ router.post('/', async (request, response) => {
     const newBook = {
       title: request.body.title,
       author: request.body.author,
-     /* publisherB: request.body.publisherB,*/
+      publisherB: request.body.publisherB,
       publishYear: request.body.publishYear,
     };
 
@@ -67,7 +67,7 @@ router.put('/:id', async (request, response) => {
     if (
       !request.body.title ||
       !request.body.author ||
-      /*!request.body.publisherB ||*/
+      !request.body.publisherB ||
       !request.body.publishYear
     ) {
       return response.status(400).send({

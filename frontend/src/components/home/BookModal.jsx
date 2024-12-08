@@ -28,10 +28,10 @@ const BookModal = ({ book, onClose }) => {
           <BiUserCircle className='text-red-300 text-2xl' />
           <h2 className='my-1'>{book.author}</h2>
         </div>
-       {/*}div className='flex justify-start items-center gap-x-2'>
+       <div className='flex justify-start items-center gap-x-2'>
                  <BiUserCircle className='text-red-300 text-2xl' />
                  <h2 className='my-1'>{book.publisherB}</h2>
-               </div>*/}
+               </div>
         <p className='mt-4'>Anything You want to show</p>
         <p className='my-2'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia

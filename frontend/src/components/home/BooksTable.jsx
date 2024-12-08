@@ -14,6 +14,9 @@ const BooksTable = ({ books }) => {
             Keyword
           </th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
+            Publisher
+          </th>
+          <th className='border border-slate-600 rounded-md max-md:hidden'>
             Pages
           </th>
           <th className='border border-slate-600 rounded-md'>Operations</th>

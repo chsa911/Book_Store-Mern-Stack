@@ -8,8 +8,7 @@ import { useSnackbar } from 'notistack';
 const EditBook = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
- /* const [publisherB, setpublisherB] = useState('');
-  */
+  const [publisherB, setPublisherB] = useState('');
   const [publishYear, setPublishYear] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -23,7 +22,7 @@ const EditBook = () => {
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear)
         setTitle(response.data.title)
-        /*setpublisherB(response.data.publisherB)*/
+        setpublisherB(response.data.publisherB)
         setLoading(false);
       }).catch((error) => {
         setLoading(false);
@@ -36,7 +35,7 @@ const EditBook = () => {
     const data = {
       title,
       author,
-      /*publisherB,*/
+      publisherB,
 
       publishYear,
     };
@@ -80,7 +79,7 @@ const EditBook = () => {
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
-        {/*<div className='my-4'>
+        <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Publisher</label>
           <input
             type='text'
@@ -88,7 +87,7 @@ const EditBook = () => {
             onChange={(e) => setAuthor(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
-        </div>*/}
+        </div>
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Pages</label>
           <input
