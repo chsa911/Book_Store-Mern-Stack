@@ -35,9 +35,15 @@ const ShowBook = () => {
             <span className='text-xl mr-4 text-gray-500'>Id</span>
             <span>{book._id}</span>
           </div>
-          <div className='my-4'>
+
+                  /*bookfields14*/
+  <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Keyword</span>
             <span>{book.title}</span>
+          </div>
+  <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>Kwposition</span>
+            <span>{book.kwPosition}</span>
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Author</span>

@@ -11,6 +11,8 @@ const BookSingleCard = ({ book }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
+              /*bookfields8*/
+
     <div className='border-2 border-gray-500 rounded-lg px-4 py-2 m-4 relative hover:shadow-xl'>
       <h2 className='absolute top-1 right-2 px-4 py-1 bg-red-300 rounded-lg'>
         {book.publishYear}
@@ -27,6 +29,10 @@ const BookSingleCard = ({ book }) => {
 <div className='flex justify-start items-center gap-x-2'>
               <BiUserCircle className='text-red-300 text-2xl' />
               <h2 className='my-1'>{book.publisherB}</h2>
+            </div>
+<div className='flex justify-start items-center gap-x-2'>
+              <BiUserCircle className='text-red-300 text-2xl' />
+              <h2 className='my-1'>{book.kwPosition}</h2>
             </div>
 
       <div className='flex justify-between items-center gap-x-2 mt-4 p-4'>

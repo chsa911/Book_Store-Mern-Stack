@@ -7,20 +7,25 @@ const router = express.Router();
 router.post('/', async (request, response) => {
   try {
     if (
+      /*bookfields2*/
       !request.body.title ||
+      !request.body.kwPosition ||
       !request.body.author ||
       !request.body.publisherB ||
       !request.body.publishYear
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: title, author, publisher, publishYear',
+      /*bookfields3*/
+        message: 'Send all required fields: author, keyword, kwposition, publisher, publishYear',
       });
     }
     const newBook = {
+      /*bookfields4*/
       title: request.body.title,
+      kwPosition: request.body.kwPosition,
       author: request.body.author,
-      publisherB: request.body.publisherB,
-      publishYear: request.body.publishYear,
+     publisherB: request.body.publisherB,
+           publishYear: request.body.publishYear,
     };
 
     const book = await Book.create(newBook);
@@ -65,13 +70,16 @@ router.get('/:id', async (request, response) => {
 router.put('/:id', async (request, response) => {
   try {
     if (
+     /*bookfields5*/
       !request.body.title ||
+      !request.body.kwPosition ||
       !request.body.author ||
       !request.body.publisherB ||
       !request.body.publishYear
     ) {
       return response.status(400).send({
-        message: 'Send all required fields: title, author, publisher, publishYear',
+
+       /*bookfields6*/ message: 'Send all required fields: author, keyword, kwposition,  publisher, publishYear',
       });
     }
 
