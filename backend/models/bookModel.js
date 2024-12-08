@@ -10,7 +10,7 @@ const bookSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-/*    author: {
+/*    publisherB: {
       type: String,
       required: true,
     },
