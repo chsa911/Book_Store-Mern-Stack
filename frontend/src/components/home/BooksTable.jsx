@@ -9,9 +9,9 @@ const BooksTable = ({ books }) => {
       <thead>
         <tr>
           <th className='border border-slate-600 rounded-md'>No</th>
-          <th className='border border-slate-600 rounded-md'>Title</th>
+          <th className='border border-slate-600 rounded-md'>Author</th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
-            Author
+            Title
           </th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
             Publish Year
@@ -26,10 +26,10 @@ const BooksTable = ({ books }) => {
               {index + 1}
             </td>
             <td className='border border-slate-700 rounded-md text-center'>
-              {book.title}
+              {book.author}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-              {book.author}
+              {book.title}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.publishYear}
