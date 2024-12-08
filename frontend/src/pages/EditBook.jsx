@@ -8,6 +8,8 @@ import { useSnackbar } from 'notistack';
 const EditBook = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+ /* const [publisher, setPublisher] = useState('');
+  */
   const [publishYear, setPublishYear] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -21,6 +23,7 @@ const EditBook = () => {
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear)
         setTitle(response.data.title)
+        /*setPublisher(response.data.publisher)*/
         setLoading(false);
       }).catch((error) => {
         setLoading(false);
@@ -33,6 +36,8 @@ const EditBook = () => {
     const data = {
       title,
       author,
+      /*publisher,*/
+
       publishYear,
     };
     setLoading(true);
@@ -75,6 +80,15 @@ const EditBook = () => {
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
+        {/*<div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Publisher</label>
+          <input
+            type='text'
+            value={publisher}
+            onChange={(e) => setAuthor(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2  w-full '
+          />
+        </div>*/}
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Pages</label>
           <input

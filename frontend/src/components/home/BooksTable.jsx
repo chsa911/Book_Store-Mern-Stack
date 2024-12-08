@@ -32,6 +32,10 @@ const BooksTable = ({ books }) => {
               {book.title}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.publisher}
+            </td>
+
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.publishYear}
             </td>
             <td className='border border-slate-700 rounded-md text-center'>
