@@ -58,7 +58,7 @@ const EditBook = () => {
       {loading ? <Spinner /> : ''}
       <div className='flex flex-col border-2 border-sky-400 rounded-xl w-[600px] p-4 mx-auto'>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Title</label>
+          <label className='text-xl mr-4 text-gray-500'>Keyword</label>
           <input
             type='text'
             value={title}
@@ -76,7 +76,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Publish Year</label>
+          <label className='text-xl mr-4 text-gray-500'>Pages</label>
           <input
             type='number'
             value={publishYear}
