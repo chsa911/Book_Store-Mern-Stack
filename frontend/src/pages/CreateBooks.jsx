@@ -107,7 +107,7 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Kw2Pos</label>
+          <label className='text-xl mr-4 text-gray-500'>Kw2 Position</label>
           <input
             type='text'
             value={kw2Pos}
@@ -126,7 +126,7 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Kw3Pos</label>
+          <label className='text-xl mr-4 text-gray-500'>Kw3 Position</label>
           <input
             type='text'
             value={kw3Pos}
