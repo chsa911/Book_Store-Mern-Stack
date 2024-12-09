@@ -43,7 +43,7 @@ const bookSchema = mongoose.Schema(
           type: String,
           required: true,
         },
-toptitel: {
+toptt: {
           type: String,
           required: false,
         },
@@ -51,7 +51,7 @@ entdat: {
           type: Number,
           required: false,
         },
-vowwuwrdig: {
+vowwuwrd: {
           type: String,
           required: false,
         },
