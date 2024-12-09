@@ -8,12 +8,11 @@ import { useSnackbar } from 'notistack';
 const CreateBooks = () => {
            /*bookfields9*/
   const [author, setAuthor] = useState('');
-
-  const [keyw, setKeyw1] = useState('');
+  const [keyw1, setKeyw1] = useState('');
   const [kw1Pos, setKw1Pos] = useState('');
   const [keyw2, setKeyw2] = useState('');
   const [kw2Pos, setKw2Pos] = useState('');
-  const [keyw3, setKeyw3] = usveState('');
+  const [keyw3, setKeyw3] = useState('');
   const [kw3Pos, setKw3Pos] = useState('');
   const [publisherB, setPublisherB] = useState('');
   const [pages, setPages] = useState('');
