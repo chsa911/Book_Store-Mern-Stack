@@ -60,8 +60,9 @@ const BookModal = ({ book, onClose }) => {
                </div>
        <div className='flex justify-start items-center gap-x-2'>
                  <BiUserCircle className='text-red-300 text-2xl' />
-                 <h2 className='my-1'>{book.toptt}</h2>
+                 <h2 className='my-1'>{book.topTt}</h2>
                </div>
+       {/*
        <div className='flex justify-start items-center gap-x-2'>
                  <BiUserCircle className='text-red-300 text-2xl' />
                  <h2 className='my-1'>{book.entdat}</h2>
@@ -70,25 +71,10 @@ const BookModal = ({ book, onClose }) => {
                  <BiUserCircle className='text-red-300 text-2xl' />
                  <h2 className='my-1'>{book.voewrd}</h2>
                </div>
+       */}
        <div className='flex justify-start items-center gap-x-2'>
                  <BiUserCircle className='text-red-300 text-2xl' />
                  <h2 className='my-1'>{book.mark}</h2>
-               </div>
-       <div className='flex justify-start items-center gap-x-2'>
-                 <BiUserCircle className='text-red-300 text-2xl' />
-                 <h2 className='my-1'>{book.publisherB}</h2>
-               </div>
-       <div className='flex justify-start items-center gap-x-2'>
-                 <BiUserCircle className='text-red-300 text-2xl' />
-                 <h2 className='my-1'>{book.publisherB}</h2>
-               </div>
-       <div className='flex justify-start items-center gap-x-2'>
-                 <BiUserCircle className='text-red-300 text-2xl' />
-                 <h2 className='my-1'>{book.publisherB}</h2>
-               </div>
-       <div className='flex justify-start items-center gap-x-2'>
-                 <BiUserCircle className='text-red-300 text-2xl' />
-                 <h2 className='my-1'>{book.publisherB}</h2>
                </div>
 
         <p className='mt-4'>Anything You want to show</p>

@@ -18,7 +18,7 @@ router.post('/', async (request, response) => {
       !request.body.publisherB ||
       !request.body.pages ||
         !request.body.reslt ||
-      !request.body.toptt  ||
+      !request.body.topTt  ||
     /*     !request.body.entdat ||
       !request.body.voewuerd ||
       !request.body.voedatum||
@@ -33,19 +33,20 @@ router.post('/', async (request, response) => {
     const newBook = {
       /*bookfields4*/
       author: request.body.author,
-      keyw1: request.body.keyw,
-      kw1Pos: request.body.kwPos,
-            keyw2: request.body.keyw,
-      kw2Pos: request.body.kwPos,
-         keyw3: request.body.keyw,
-      kw3Pos: request.body.kwPos,
+      keyw1: request.body.keyw1,
+      kw1Pos: request.body.kw1Pos,
+            keyw2: request.body.keyw2,
+      kw2Pos: request.body.kw2Pos,
+         keyw3: request.body.keyw3,
+      kw3Pos: request.body.kw3Pos,
      publisherB: request.body.publisherB,
            pages: request.body.pages,
            pages: request.body.reslt,
-           pages: request.body.toptt,
-           pages: request.body.entdat,
+           pages: request.body.topTt,
+         /*  pages: request.body.entDat,
            pages: request.body.voewuerd,
            pages: request.body.voedatum,
+           */
            pages: request.body.mark,
     };
 
@@ -102,11 +103,12 @@ router.put('/:id', async (request, response) => {
           !request.body.publisherB ||
           !request.body.pages ||
             !request.body.reslt ||
-          !request.body.toptt  ||
-             !request.body.entdat ||
+          !request.body.topTt  ||
+    /*        !request.body.entdat ||
           !request.body.voewuerd ||
           !request.body.voedatum||
-          !request.body.mark
+
+      */    !request.body.mark
     ) {
       return response.status(400).send({
 

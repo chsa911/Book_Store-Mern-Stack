@@ -60,8 +60,9 @@ const BookSingleCard = ({ book }) => {
             </div>
             <div className='flex justify-start items-center gap-x-2'>
               <BiUserCircle className='text-red-300 text-2xl' />
-              <h2 className='my-1'>{book.toptt}</h2>
+              <h2 className='my-1'>{book.topTt}</h2>
             </div>
+            {/*
             <div className='flex justify-start items-center gap-x-2'>
               <BiUserCircle className='text-red-300 text-2xl' />
               <h2 className='my-1'>{book.entdat}</h2>
@@ -74,6 +75,7 @@ const BookSingleCard = ({ book }) => {
               <BiUserCircle className='text-red-300 text-2xl' />
               <h2 className='my-1'>{book.voedatum}</h2>
             </div>
+            */}
             <div className='flex justify-start items-center gap-x-2'>
               <BiUserCircle className='text-red-300 text-2xl' />
               <h2 className='my-1'>{book.mark}</h2>

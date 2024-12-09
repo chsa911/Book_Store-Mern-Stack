@@ -18,7 +18,7 @@ const CreateBooks = () => {
   const [publisherB, setPublisherB] = useState('');
   const [pages, setPages] = useState('');
   const [reslt, setReslt] = useState('');
-  const [toptt, setTopTt] = useState('');
+  const [topTt, setTopTt] = useState('');
   /*const [entDat, setEntDat] = useState('');
   const [voewrd, setVoewrd] = useState('');
   */
@@ -83,8 +83,8 @@ const CreateBooks = () => {
           <label className='text-xl mr-4 text-gray-500'>Keyword</label>
           <input
             type='text'
-            value={keyw}
-            onChange={(e) => setKeyw(e.target.value)}
+            value={keyw1}
+            onChange={(e) => setKeyw1(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2 w-full'
           />
         </div>
@@ -92,8 +92,46 @@ const CreateBooks = () => {
           <label className='text-xl mr-4 text-gray-500'>kwPos</label>
           <input
             type='text'
-            value={kwPos}
-            onChange={(e) => setkwPos(e.target.value)}
+            value={kw1Pos}
+            onChange={(e) => setkw1Pos(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2  w-full '
+          />
+        </div>
+
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Keyword</label>
+          <input
+            type='text'
+            value={keyw2}
+            onChange={(e) => setKeyw2(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2 w-full'
+          />
+        </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>kwPos</label>
+          <input
+            type='text'
+            value={kw2Pos}
+            onChange={(e) => setkw2Pos(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2  w-full '
+          />
+        </div>
+
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Keyword</label>
+          <input
+            type='text'
+            value={keyw3}
+            onChange={(e) => setKeyw3(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2 w-full'
+          />
+        </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>kwPos</label>
+          <input
+            type='text'
+            value={kw3Pos}
+            onChange={(e) => setkw3Pos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
@@ -115,6 +153,34 @@ const CreateBooks = () => {
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <input
+            type='number'
+            value={reslt}
+            onChange={(e) => setReslt(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2  w-full '
+          />
+        </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <input
+            type='number'
+            value={topTt}
+            onChange={(e) => settopTt(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2  w-full '
+          />
+        </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <input
+            type='number'
+            value={mark}
+            onChange={(e) => setMark(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2  w-full '
+          />
+        </div>
+
         <button className='p-2 bg-sky-300 m-8' onClick={handleSaveBook}>
           Save
         </button>

@@ -7,12 +7,18 @@ import { useSnackbar } from 'notistack';
 
 const EditBook = () => {
             /*bookfields12*/
-
-  const [keyw, setKeyw] = useState('');
   const [author, setAuthor] = useState('');
-  const [kwPos, setkwPos] = useState('');
+  const [keyw1, setKeyw1] = useState('');
+  const [kw1Pos, setkw1Pos] = useState('');
+  const [keyw2, setKeyw2] = useState('');
+  const [kw2Pos, setKw2Pos] = useState('');
+  const [keyw3, setKeyw3] = useState('');
+  const [kw3Pos, setKw3Pos] = useState('');
   const [publisherB, setPublisherB] = useState('');
   const [pages, setPages] = useState('');
+  const [reslt, setReslt] = useState('');
+  const [topTt, setTopTt] = useState('');
+  const [mark, setMark] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const {id} = useParams();
