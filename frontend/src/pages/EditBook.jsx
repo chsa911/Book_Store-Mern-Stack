@@ -54,13 +54,18 @@ const EditBook = () => {
   const handleEditBook = () => {
     const data = {
                 /*bookfields14*/
-
-      keyw,
       author,
+      keyw1,
+      kw1Pos,
+      keyw2,
+      kw2Pos,
+      keyw3,
+      kw3Pos,
       publisherB,
-      kwPos,
-
       pages,
+      reslt,
+      topTt,
+      mark,
     };
     setLoading(true);
     axios
