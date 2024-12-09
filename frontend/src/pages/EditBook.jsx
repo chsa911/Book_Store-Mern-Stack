@@ -88,7 +88,7 @@ const EditBook = () => {
       <BackButton />
       <h1 className='text-3xl my-4'>Edit Book</h1>
       {loading ? <Spinner /> : ''}
-              /*bookfields15*/
+              {/*bookfields15*/}
 
       <div className='flex flex-col border-2 border-sky-400 rounded-xl w-[600px] p-4 mx-auto'>
         <div className='my-4'>
@@ -113,7 +113,7 @@ const EditBook = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Kw 1 Position</label>
           <input
-            type='text'
+            type='number'
             value={kw1Pos}
             onChange={(e) => setKw1Pos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2 w-full'
@@ -131,7 +131,7 @@ const EditBook = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Kw2 Position</label>
           <input
-            type='text'
+            type='number'
             value={kw2Pos}
             onChange={(e) => setKw2Pos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2 w-full'
@@ -149,7 +149,7 @@ const EditBook = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Kw3 Position</label>
           <input
-            type='text'
+            type='number'
             value={kw3Pos}
             onChange={(e) => setKw3Pos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2 w-full'
@@ -176,7 +176,7 @@ const EditBook = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Ergebnis</label>
           <input
-            type='number'
+            type='text                  '
             value={reslt}
             onChange={(e) => setReslt(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
@@ -185,7 +185,7 @@ const EditBook = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Toptitel</label>
           <input
-            type='number'
+            type='text'
             value={topTt}
             onChange={(e) => setTopTt(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
@@ -194,7 +194,7 @@ const EditBook = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Markierung</label>
           <input
-            type='number'
+            type='text'
             value={markBk}
             onChange={(e) => setMarkBk(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '

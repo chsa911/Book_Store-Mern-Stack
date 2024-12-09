@@ -90,7 +90,7 @@ const CreateBooks = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Kw1 Position</label>
           <input
-            type='text'
+            type='number'
             value={kw1Pos}
             onChange={(e) => setKw1Pos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
@@ -109,7 +109,7 @@ const CreateBooks = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Kw2 Position</label>
           <input
-            type='text'
+            type='number'
             value={kw2Pos}
             onChange={(e) => setKw2Pos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
@@ -128,7 +128,7 @@ const CreateBooks = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Kw3 Position</label>
           <input
-            type='text'
+            type='number'
             value={kw3Pos}
             onChange={(e) => setKw3Pos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
@@ -155,7 +155,7 @@ const CreateBooks = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Ergebnis</label>
           <input
-            type='number'
+            type='text'
             value={reslt}
             onChange={(e) => setReslt(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
@@ -164,7 +164,7 @@ const CreateBooks = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>TopTitel</label>
           <input
-            type='number'
+            type='text'
             value={topTt}
             onChange={(e) => setTopTt(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
@@ -173,7 +173,7 @@ const CreateBooks = () => {
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Markierung</label>
           <input
-            type='number'
+            type='text'
             value={markBk}
             onChange={(e) => setMarkBk(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
