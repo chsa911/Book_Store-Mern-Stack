@@ -31,10 +31,18 @@ const EditBook = () => {
                   /*bookfields13*/
 
         setAuthor(response.data.author);
-        setPages(response.data.pages)
-        setkwPos(response.data.kwPos)
-        setKeyw(response.data.keyw)
+        setKeyw1(response.data.keyw1)
+        setkw1Pos(response.data.kw1Pos)
+        setKeyw1(response.data.keyw2)
+        setkw1Pos(response.data.kw2Pos)
+        setKeyw1(response.data.keyw3)
+        setkw1Pos(response.data.kw3Pos)
         setpublisherB(response.data.publisherB)
+        setPages(response.data.pages)
+        setReslt(response.data.reslt)
+        settopTt(response.data.topTt)
+        setMark(response.data.mark)
+
         setLoading(false);
       }).catch((error) => {
         setLoading(false);
