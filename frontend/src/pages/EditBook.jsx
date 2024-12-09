@@ -7,7 +7,7 @@ import { useSnackbar } from 'notistack';
 
 const EditBook = () => {
             /*bookfields12*/
-  const [authorB, setauthorB] = useState('');
+  const [authorB, setAuthorB] = useState('');
   const [keyw1, setKeyw1] = useState('');
   const [kw1Pos, setKw1Pos] = useState('');
   const [keyw2, setKeyw2] = useState('');
@@ -15,7 +15,7 @@ const EditBook = () => {
   const [keyw3, setKeyw3] = useState('');
   const [kw3Pos, setKw3Pos] = useState('');
   const [publisherB, setPublisherB] = useState('');
-  const [pages, setPages] = useState('');
+  const [pagesB, setPagesB] = useState('');
   const [reslt, setReslt] = useState('');
   const [topTt, setTopTt] = useState('');
   const [markBk, setMarkBk] = useState('');
@@ -30,7 +30,7 @@ const EditBook = () => {
     .then((response) => {
                   /*bookfields13*/
 
-        setauthorB(response.data.authorB);
+        setAuthorB(response.data.authorB);
         setKeyw1(response.data.keyw1)
         setKw1Pos(response.data.kw1Pos)
         setKeyw2(response.data.keyw2)
@@ -38,7 +38,7 @@ const EditBook = () => {
         setKeyw3(response.data.keyw3)
         setKw3Pos(response.data.kw3Pos)
         setPublisherB(response.data.publisherB)
-        setPages(response.data.pages)
+        setPagesB(response.data.pagesB)
         setReslt(response.data.reslt)
         setTopTt(response.data.topTt)
         setMarkBk(response.data.markBk)
@@ -62,7 +62,7 @@ const EditBook = () => {
       keyw3,
       kw3Pos,
       publisherB,
-      pages,
+      pagesB,
       reslt,
       topTt,
       markBk,
@@ -96,7 +96,7 @@ const EditBook = () => {
           <input
             type='text'
             value={authorB}
-            onChange={(e) => setauthorB(e.target.value)}
+            onChange={(e) => setAuthorB(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
@@ -168,8 +168,8 @@ const EditBook = () => {
           <label className='text-xl mr-4 text-gray-500'>Pages</label>
           <input
             type='number'
-            value={pages}
-            onChange={(e) => setPages(e.target.value)}
+            value={pagesB}
+            onChange={(e) => setPagesB(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>

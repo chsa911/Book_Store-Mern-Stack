@@ -52,7 +52,7 @@ const BookModal = ({ book, onClose }) => {
                </div>
        <div className='flex justify-start items-center gap-x-2'>
                  <BiUserCircle className='text-red-300 text-2xl' />
-                 <h2 className='my-1'>{book.pages}</h2>
+                 <h2 className='my-1'>{book.pagesB}</h2>
                </div>
        <div className='flex justify-start items-center gap-x-2'>
                  <BiUserCircle className='text-red-300 text-2xl' />

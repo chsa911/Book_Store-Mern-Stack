@@ -7,7 +7,7 @@ import { useSnackbar } from 'notistack';
 
 const CreateBooks = () => {
            /*bookfields9*/
-  const [authorB, setauthorB] = useState('');
+  const [authorB, setAuthorB] = useState('');
   const [keyw1, setKeyw1] = useState('');
   const [kw1Pos, setKw1Pos] = useState('');
   const [keyw2, setKeyw2] = useState('');
@@ -15,7 +15,7 @@ const CreateBooks = () => {
   const [keyw3, setKeyw3] = useState('');
   const [kw3Pos, setKw3Pos] = useState('');
   const [publisherB, setPublisherB] = useState('');
-  const [pages, setPages] = useState('');
+  const [pagesB, setPagesB] = useState('');
   const [reslt, setReslt] = useState('');
   const [topTt, setTopTt] = useState('');
   /*const [entDat, setEntDat] = useState('');
@@ -38,7 +38,7 @@ const CreateBooks = () => {
       keyw3,
       kw3Pos,
       publisherB,
-      pages,
+      pagesB,
       reslt,
       topTt,
       markBk,
@@ -73,7 +73,7 @@ const CreateBooks = () => {
                  <input
                    type='text'
                    value={authorB}
-                   onChange={(e) => setauthorB(e.target.value)}
+                   onChange={(e) => setAuthorB(e.target.value)}
                    className='border-2 border-gray-500 px-4 py-2  w-full '
                  />
                </div>
@@ -147,8 +147,8 @@ const CreateBooks = () => {
           <label className='text-xl mr-4 text-gray-500'>Seiten</label>
           <input
             type='number'
-            value={pages}
-            onChange={(e) => setPages(e.target.value)}
+            value={pagesB}
+            onChange={(e) => setPagesB(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>

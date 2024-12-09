@@ -87,7 +87,7 @@ Mk.
             </td>
 
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-              {book.pages}
+              {book.pagesB}
             </td> <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
                 {book.reslt}
                       </td> <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
