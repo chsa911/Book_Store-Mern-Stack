@@ -7,7 +7,7 @@ import { useSnackbar } from 'notistack';
 
 const EditBook = () => {
             /*bookfields12*/
-  const [author, setAuthor] = useState('');
+  const [authorB, setauthorB] = useState('');
   const [keyw1, setKeyw1] = useState('');
   const [kw1Pos, setKw1Pos] = useState('');
   const [keyw2, setKeyw2] = useState('');
@@ -18,7 +18,7 @@ const EditBook = () => {
   const [pages, setPages] = useState('');
   const [reslt, setReslt] = useState('');
   const [topTt, setTopTt] = useState('');
-  const [mark, setMark] = useState('');
+  const [markBk, setMarkBk] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const {id} = useParams();
@@ -30,7 +30,7 @@ const EditBook = () => {
     .then((response) => {
                   /*bookfields13*/
 
-        setAuthor(response.data.author);
+        setauthorB(response.data.authorB);
         setKeyw1(response.data.keyw1)
         setKw1Pos(response.data.kw1Pos)
         setKeyw2(response.data.keyw2)
@@ -41,7 +41,7 @@ const EditBook = () => {
         setPages(response.data.pages)
         setReslt(response.data.reslt)
         setTopTt(response.data.topTt)
-        setMark(response.data.mark)
+        setMarkBk(response.data.markBk)
 
         setLoading(false);
       }).catch((error) => {
@@ -54,7 +54,7 @@ const EditBook = () => {
   const handleEditBook = () => {
     const data = {
                 /*bookfields14*/
-      author,
+      authorB,
       keyw1,
       kw1Pos,
       keyw2,
@@ -65,7 +65,7 @@ const EditBook = () => {
       pages,
       reslt,
       topTt,
-      mark,
+      markBk,
     };
     setLoading(true);
     axios
@@ -95,8 +95,8 @@ const EditBook = () => {
           <label className='text-xl mr-4 text-gray-500'>Author</label>
           <input
             type='text'
-            value={author}
-            onChange={(e) => setAuthor(e.target.value)}
+            value={authorB}
+            onChange={(e) => setauthorB(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
@@ -195,8 +195,8 @@ const EditBook = () => {
           <label className='text-xl mr-4 text-gray-500'>Pages</label>
           <input
             type='number'
-            value={mark}
-            onChange={(e) => setMark(e.target.value)}
+            value={markBk}
+            onChange={(e) => setMarkBk(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>

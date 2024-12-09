@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const bookSchema = mongoose.Schema (
   {
  /*bookfields1*/
-    author: {
+    authorB: {
           type: String,
           required: true,
         },
@@ -59,7 +59,7 @@ voedatum: {
           type: Number,
           required: false,
         },*/
-mark: {
+markBk: {
           type: String,
           required: false,
         },

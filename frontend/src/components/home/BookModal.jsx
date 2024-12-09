@@ -19,7 +19,7 @@ const BookModal = ({ book, onClose }) => {
         /*  bookfields7*/
              <div className='flex justify-start items-center gap-x-2'>
                 <BiUserCircle className='text-red-300 text-2xl' />
-                <h2 className='my-1'>{book.author}</h2>
+                <h2 className='my-1'>{book.authorB}</h2>
               </div>
         <h4 className='my-2 text-gray-500'>{book._id}</h4>
         <div className='flex justify-start items-center gap-x-2'>
@@ -74,7 +74,7 @@ const BookModal = ({ book, onClose }) => {
        */}
        <div className='flex justify-start items-center gap-x-2'>
                  <BiUserCircle className='text-red-300 text-2xl' />
-                 <h2 className='my-1'>{book.mark}</h2>
+                 <h2 className='my-1'>{book.markBk}</h2>
                </div>
 
         <p className='mt-4'>Anything You want to show</p>

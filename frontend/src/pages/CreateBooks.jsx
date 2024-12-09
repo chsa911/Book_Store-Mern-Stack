@@ -7,7 +7,7 @@ import { useSnackbar } from 'notistack';
 
 const CreateBooks = () => {
            /*bookfields9*/
-  const [author, setAuthor] = useState('');
+  const [authorB, setauthorB] = useState('');
   const [keyw1, setKeyw1] = useState('');
   const [kw1Pos, setKw1Pos] = useState('');
   const [keyw2, setKeyw2] = useState('');
@@ -21,7 +21,7 @@ const CreateBooks = () => {
   /*const [entDat, setEntDat] = useState('');
   const [voewrd, setVoewrd] = useState('');
   */
-  const [mark, setMark] = useState('');
+  const [markBk, setMarkBk] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar();
@@ -30,7 +30,7 @@ const CreateBooks = () => {
     const data = {
                /*bookfields10*/
 
-      author,
+      authorB,
       keyw1,
       kw1Pos,
       keyw2,
@@ -41,7 +41,7 @@ const CreateBooks = () => {
       pages,
       reslt,
       topTt,
-      mark,
+      markBk,
     };
     setLoading(true);
     axios
@@ -72,8 +72,8 @@ const CreateBooks = () => {
                  <label className='text-xl mr-4 text-gray-500'>Author</label>
                  <input
                    type='text'
-                   value={author}
-                   onChange={(e) => setAuthor(e.target.value)}
+                   value={authorB}
+                   onChange={(e) => setauthorB(e.target.value)}
                    className='border-2 border-gray-500 px-4 py-2  w-full '
                  />
                </div>
@@ -174,8 +174,8 @@ const CreateBooks = () => {
           <label className='text-xl mr-4 text-gray-500'>Markierung</label>
           <input
             type='number'
-            value={mark}
-            onChange={(e) => setMark(e.target.value)}
+            value={markBk}
+            onChange={(e) => setMarkBk(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>

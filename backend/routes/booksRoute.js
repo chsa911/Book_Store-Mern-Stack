@@ -8,7 +8,7 @@ router.post('/', async (request, response) => {
   try {
     if (
       /*bookfields2*/
-      !request.body.author ||
+      !request.body.authorB ||
       !request.body.keyw1 ||
       !request.body.kw1Pos ||
       !request.body.keyw2 ||
@@ -23,7 +23,7 @@ router.post('/', async (request, response) => {
       !request.body.voewuerd ||
       !request.body.voedatum||
       */
-      !request.body.mark
+      !request.body.markBk
     ) {
       return response.status(400).send({
       /*bookfields3*/
@@ -32,7 +32,7 @@ router.post('/', async (request, response) => {
     }
     const newBook = {
       /*bookfields4*/
-      author: request.body.author,
+      authorB: request.body.authorB,
       keyw1: request.body.keyw1,
       kw1Pos: request.body.kw1Pos,
             keyw2: request.body.keyw2,
@@ -47,7 +47,7 @@ router.post('/', async (request, response) => {
            pages: request.body.voewuerd,
            pages: request.body.voedatum,
            */
-           pages: request.body.mark,
+           pages: request.body.markB,
     };
 
     const book = await Book.create(newBook);
@@ -93,7 +93,7 @@ router.put('/:id', async (request, response) => {
   try {
     if (
      /*bookfields5*/
-    !request.body.author ||
+    !request.body.authorB ||
           !request.body.keyw1 ||
           !request.body.kw1Pos ||
           !request.body.keyw2 ||
@@ -108,7 +108,7 @@ router.put('/:id', async (request, response) => {
           !request.body.voewuerd ||
           !request.body.voedatum||
 
-      */    !request.body.mark
+      */    !request.body.markB
     ) {
       return response.status(400).send({
 
