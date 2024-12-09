@@ -17,26 +17,80 @@ const BookModal = ({ book, onClose }) => {
           onClick={onClose}
         />
         /*bookfields7*/
-        <h2 className='w-fit px-4 py-1 bg-red-300 rounded-lg'>
-          {book.pages}
-        </h2>
+             <div className='flex justify-start items-center gap-x-2'>
+                <BiUserCircle className='text-red-300 text-2xl' />
+                <h2 className='my-1'>{book.author}</h2>
+              </div>
         <h4 className='my-2 text-gray-500'>{book._id}</h4>
         <div className='flex justify-start items-center gap-x-2'>
           <PiBookOpenTextLight className='text-red-300 text-2xl' />
-          <h2 className='my-1'>{book.keyw}</h2>
+          <h2 className='my-1'>{book.keyw1}</h2>
         </div>
         <div className='flex justify-start items-center gap-x-2'>
           <PiBookOpenTextLight className='text-red-300 text-2xl' />
-          <h2 className='my-1'>{book.kwPosition}</h2>
+          <h2 className='my-1'>{book.kw1Pos}</h2>
+        </div>
+<div className='flex justify-start items-center gap-x-2'>
+          <PiBookOpenTextLight className='text-red-300 text-2xl' />
+          <h2 className='my-1'>{book.keyw2}</h2>
         </div>
         <div className='flex justify-start items-center gap-x-2'>
-          <BiUserCircle className='text-red-300 text-2xl' />
-          <h2 className='my-1'>{book.author}</h2>
+          <PiBookOpenTextLight className='text-red-300 text-2xl' />
+          <h2 className='my-1'>{book.kw2Pos}</h2>
+        </div>
+<div className='flex justify-start items-center gap-x-2'>
+          <PiBookOpenTextLight className='text-red-300 text-2xl' />
+          <h2 className='my-1'>{book.keyw3}</h2>
+        </div>
+        <div className='flex justify-start items-center gap-x-2'>
+          <PiBookOpenTextLight className='text-red-300 text-2xl' />
+          <h2 className='my-1'>{book.kw3Pos}</h2>
         </div>
        <div className='flex justify-start items-center gap-x-2'>
                  <BiUserCircle className='text-red-300 text-2xl' />
                  <h2 className='my-1'>{book.publisherB}</h2>
                </div>
+       <div className='flex justify-start items-center gap-x-2'>
+                 <BiUserCircle className='text-red-300 text-2xl' />
+                 <h2 className='my-1'>{book.pages}</h2>
+               </div>
+       <div className='flex justify-start items-center gap-x-2'>
+                 <BiUserCircle className='text-red-300 text-2xl' />
+                 <h2 className='my-1'>{book.reslt}</h2>
+               </div>
+       <div className='flex justify-start items-center gap-x-2'>
+                 <BiUserCircle className='text-red-300 text-2xl' />
+                 <h2 className='my-1'>{book.toptt}</h2>
+               </div>
+       <div className='flex justify-start items-center gap-x-2'>
+                 <BiUserCircle className='text-red-300 text-2xl' />
+                 <h2 className='my-1'>{book.entdat}</h2>
+               </div>
+       <div className='flex justify-start items-center gap-x-2'>
+                 <BiUserCircle className='text-red-300 text-2xl' />
+                 <h2 className='my-1'>{book.voewrd}</h2>
+               </div>
+       <div className='flex justify-start items-center gap-x-2'>
+                 <BiUserCircle className='text-red-300 text-2xl' />
+                 <h2 className='my-1'>{book.mark}</h2>
+               </div>
+       <div className='flex justify-start items-center gap-x-2'>
+                 <BiUserCircle className='text-red-300 text-2xl' />
+                 <h2 className='my-1'>{book.publisherB}</h2>
+               </div>
+       <div className='flex justify-start items-center gap-x-2'>
+                 <BiUserCircle className='text-red-300 text-2xl' />
+                 <h2 className='my-1'>{book.publisherB}</h2>
+               </div>
+       <div className='flex justify-start items-center gap-x-2'>
+                 <BiUserCircle className='text-red-300 text-2xl' />
+                 <h2 className='my-1'>{book.publisherB}</h2>
+               </div>
+       <div className='flex justify-start items-center gap-x-2'>
+                 <BiUserCircle className='text-red-300 text-2xl' />
+                 <h2 className='my-1'>{book.publisherB}</h2>
+               </div>
+
         <p className='mt-4'>Anything You want to show</p>
         <p className='my-2'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia
