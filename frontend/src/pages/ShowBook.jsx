@@ -37,17 +37,36 @@ const ShowBook = () => {
           </div>
 
                   /*bookfields16*/
-  <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Keyword</span>
-            <span>{book.keyw}</span>
-          </div>
-  <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>kwPos</span>
-            <span>{book.kwPos}</span>
-          </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Author</span>
             <span>{book.author}</span>
+          </div>
+
+  <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>Keyword1</span>
+            <span>{book.keyw1}</span>
+          </div>
+  <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>kw1Pos</span>
+            <span>{book.kw1Pos}</span>
+          </div>
+
+  <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>Keyword2</span>
+            <span>{book.keyw2}</span>
+          </div>
+  <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>kw2Pos</span>
+            <span>{book.kw2Pos}</span>
+          </div>
+
+  <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>Keyword3</span>
+            <span>{book.keyw3}</span>
+          </div>
+  <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>kw3Pos</span>
+            <span>{book.kw3Pos}</span>
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Publisher</span>
@@ -56,6 +75,18 @@ const ShowBook = () => {
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Pages</span>
             <span>{book.pages}</span>
+          </div>
+          <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>Ergebnis</span>
+            <span>{book.reslt}</span>
+          </div>
+          <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>Toptitel</span>
+            <span>{book.topTt}</span>
+          </div>
+          <div className='my-4'>
+            <span className='text-xl mr-4 text-gray-500'>Markierung</span>
+            <span>{book.mark}</span>
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Create Time</span>
