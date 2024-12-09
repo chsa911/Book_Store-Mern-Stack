@@ -47,7 +47,7 @@ const ShowBook = () => {
             <span>{book.keyw1}</span>
           </div>
   <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>kw1Pos</span>
+            <span className='text-xl mr-4 text-gray-500'>Kw1 Position</span>
             <span>{book.kw1Pos}</span>
           </div>
 
@@ -56,7 +56,7 @@ const ShowBook = () => {
             <span>{book.keyw2}</span>
           </div>
   <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>kw2Pos</span>
+            <span className='text-xl mr-4 text-gray-500'>Kw2 Position</span>
             <span>{book.kw2Pos}</span>
           </div>
 
@@ -65,15 +65,15 @@ const ShowBook = () => {
             <span>{book.keyw3}</span>
           </div>
   <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>kw3Pos</span>
+            <span className='text-xl mr-4 text-gray-500'>Kw3 Position</span>
             <span>{book.kw3Pos}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Publisher</span>
+            <span className='text-xl mr-4 text-gray-500'>Verlag</span>
             <span>{book.publisherB}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Pages</span>
+            <span className='text-xl mr-4 text-gray-500'>Seiten</span>
             <span>{book.pagesB}</span>
           </div>
           <div className='my-4'>

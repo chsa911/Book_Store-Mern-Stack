@@ -88,7 +88,7 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Kw1Pos</label>
+          <label className='text-xl mr-4 text-gray-500'>Kw1 Position</label>
           <input
             type='text'
             value={kw1Pos}
