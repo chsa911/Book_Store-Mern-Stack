@@ -18,21 +18,65 @@ const BookSingleCard = ({ book }) => {
         {book.pages}
       </h2>
       <h4 className='my-2 text-gray-500'>{book._id}</h4>
-      <div className='flex justify-start items-center gap-x-2'>
-        <PiBookOpenTextLight className='text-red-300 text-2xl' />
-        <h2 className='my-1'>{book.keyw}</h2>
-      </div>
-      <div className='flex justify-start items-center gap-x-2'>
+<div className='flex justify-start items-center gap-x-2'>
         <BiUserCircle className='text-red-300 text-2xl' />
         <h2 className='my-1'>{book.author}</h2>
       </div>
+      <div className='flex justify-start items-center gap-x-2'>
+        <PiBookOpenTextLight className='text-red-300 text-2xl' />
+        <h2 className='my-1'>{book.keyw1}</h2>
+      </div>
+      <div className='flex justify-start items-center gap-x-2'>
+        <PiBookOpenTextLight className='text-red-300 text-2xl' />
+        <h2 className='my-1'>{book.kw1pos}</h2>
+      </div>
+      <div className='flex justify-start items-center gap-x-2'>
+        <PiBookOpenTextLight className='text-red-300 text-2xl' />
+        <h2 className='my-1'>{book.keyw2}</h2>
+      </div>
+      <div className='flex justify-start items-center gap-x-2'>
+        <PiBookOpenTextLight className='text-red-300 text-2xl' />
+        <h2 className='my-1'>{book.kw2pos}</h2>
+      </div>
+      <div className='flex justify-start items-center gap-x-2'>
+        <PiBookOpenTextLight className='text-red-300 text-2xl' />
+        <h2 className='my-1'>{book.keyw3}</h2>
+      </div>
+      <div className='flex justify-start items-center gap-x-2'>
+        <PiBookOpenTextLight className='text-red-300 text-2xl' />
+        <h2 className='my-1'>{book.kw3pos}</h2>
+      </div>
+
 <div className='flex justify-start items-center gap-x-2'>
               <BiUserCircle className='text-red-300 text-2xl' />
               <h2 className='my-1'>{book.publisherB}</h2>
             </div>
 <div className='flex justify-start items-center gap-x-2'>
               <BiUserCircle className='text-red-300 text-2xl' />
-              <h2 className='my-1'>{book.kwPosition}</h2>
+              <h2 className='my-1'>{book.pages}</h2>
+            </div><div className='flex justify-start items-center gap-x-2'>
+              <BiUserCircle className='text-red-300 text-2xl' />
+              <h2 className='my-1'>{book.reslt}</h2>
+            </div>
+            <div className='flex justify-start items-center gap-x-2'>
+              <BiUserCircle className='text-red-300 text-2xl' />
+              <h2 className='my-1'>{book.toptt}</h2>
+            </div>
+            <div className='flex justify-start items-center gap-x-2'>
+              <BiUserCircle className='text-red-300 text-2xl' />
+              <h2 className='my-1'>{book.entdat}</h2>
+            </div>
+            <div className='flex justify-start items-center gap-x-2'>
+              <BiUserCircle className='text-red-300 text-2xl' />
+              <h2 className='my-1'>{book.voewrd}</h2>
+            </div>
+            <div className='flex justify-start items-center gap-x-2'>
+              <BiUserCircle className='text-red-300 text-2xl' />
+              <h2 className='my-1'>{book.voedatum}</h2>
+            </div>
+            <div className='flex justify-start items-center gap-x-2'>
+              <BiUserCircle className='text-red-300 text-2xl' />
+              <h2 className='my-1'>{book.mark}</h2>
             </div>
 
       <div className='flex justify-between items-center gap-x-2 mt-4 p-4'>
