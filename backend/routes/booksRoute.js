@@ -12,11 +12,11 @@ router.post('/', async (request, response) => {
       !request.body.kwPosition ||
       !request.body.author ||
       !request.body.publisherB ||
-      !request.body.publishYear
+      !request.body.pages
     ) {
       return response.status(400).send({
       /*bookfields3*/
-        message: 'Send all required fields: author, keyword, kwposition, publisher, publishYear',
+        message: 'Send all required fields: author, keyword, kwposition, publisher, pages',
       });
     }
     const newBook = {
@@ -25,7 +25,7 @@ router.post('/', async (request, response) => {
       kwPosition: request.body.kwPosition,
       author: request.body.author,
      publisherB: request.body.publisherB,
-           publishYear: request.body.publishYear,
+           pages: request.body.pages,
     };
 
     const book = await Book.create(newBook);
@@ -75,11 +75,11 @@ router.put('/:id', async (request, response) => {
       !request.body.kwPosition ||
       !request.body.author ||
       !request.body.publisherB ||
-      !request.body.publishYear
+      !request.body.pages
     ) {
       return response.status(400).send({
 
-       /*bookfields6*/ message: 'Send all required fields: author, keyword, kwposition,  publisher, publishYear',
+       /*bookfields6*/ message: 'Send all required fields: author, keyword, kwposition,  publisher, pages',
       });
     }
 

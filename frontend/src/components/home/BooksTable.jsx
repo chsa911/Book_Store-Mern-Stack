@@ -48,7 +48,7 @@ const BooksTable = ({ books }) => {
             </td>
 
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-              {book.publishYear}
+              {book.pages}
             </td>
             <td className='border border-slate-700 rounded-md text-center'>
               <div className='flex justify-center gap-x-4'>

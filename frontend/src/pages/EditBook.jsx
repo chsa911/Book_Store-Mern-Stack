@@ -12,7 +12,7 @@ const EditBook = () => {
   const [author, setAuthor] = useState('');
   const [kwPosition, setKwPosition] = useState('');
   const [publisherB, setPublisherB] = useState('');
-  const [publishYear, setPublishYear] = useState('');
+  const [pages, setPages] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const {id} = useParams();
@@ -25,7 +25,7 @@ const EditBook = () => {
                   /*bookfields11*/
 
         setAuthor(response.data.author);
-        setPublishYear(response.data.publishYear)
+        setPages(response.data.pages)
         setKwPosition(response.data.KwPosition)
         setKeyw(response.data.keyw)
         setpublisherB(response.data.publisherB)
@@ -46,7 +46,7 @@ const EditBook = () => {
       publisherB,
       kwPosition,
 
-      publishYear,
+      pages,
     };
     setLoading(true);
     axios
@@ -112,8 +112,8 @@ const EditBook = () => {
           <label className='text-xl mr-4 text-gray-500'>Pages</label>
           <input
             type='number'
-            value={publishYear}
-            onChange={(e) => setPublishYear(e.target.value)}
+            value={pages}
+            onChange={(e) => setPages(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>

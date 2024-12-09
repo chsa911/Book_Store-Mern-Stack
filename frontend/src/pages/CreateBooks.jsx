@@ -12,7 +12,7 @@ const CreateBooks = () => {
   const [author, setAuthor] = useState('');
   const [publisherB, setPublisherB] = useState('');
   const [kwPosition, setKwPosition] = useState('');
-  const [publishYear, setPublishYear] = useState('');
+  const [pages, setPages] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar();
@@ -25,7 +25,7 @@ const CreateBooks = () => {
       author,
       kwPosition,
       publisherB,
-      publishYear,
+      pages,
     };
     setLoading(true);
     axios
@@ -93,8 +93,8 @@ const CreateBooks = () => {
           <label className='text-xl mr-4 text-gray-500'>Pages</label>
           <input
             type='number'
-            value={publishYear}
-            onChange={(e) => setPublishYear(e.target.value)}
+            value={pages}
+            onChange={(e) => setPages(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>

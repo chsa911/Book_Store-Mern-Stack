@@ -55,7 +55,7 @@ const ShowBook = () => {
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Pages</span>
-            <span>{book.publishYear}</span>
+            <span>{book.pages}</span>
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Create Time</span>
