@@ -102,7 +102,7 @@ const EditBook = () => {
         </div>
 
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Keyword</label>
+          <label className='text-xl mr-4 text-gray-500'>Keyword1</label>
           <input
             type='text'
             value={keyw1}
@@ -111,7 +111,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>kwPos</label>
+          <label className='text-xl mr-4 text-gray-500'>kw1Pos</label>
           <input
             type='text'
             value={kw1Pos}
@@ -120,7 +120,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Keyword</label>
+          <label className='text-xl mr-4 text-gray-500'>Keyword2</label>
           <input
             type='text'
             value={keyw2}
@@ -129,7 +129,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>kwPos</label>
+          <label className='text-xl mr-4 text-gray-500'>kw2Pos</label>
           <input
             type='text'
             value={kw2Pos}
@@ -138,7 +138,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Keyword</label>
+          <label className='text-xl mr-4 text-gray-500'>Keyword3</label>
           <input
             type='text'
             value={keyw3}
@@ -147,7 +147,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>kwPos</label>
+          <label className='text-xl mr-4 text-gray-500'>kw3Pos</label>
           <input
             type='text'
             value={kw3Pos}
@@ -156,7 +156,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Publisher</label>
+          <label className='text-xl mr-4 text-gray-500'>Verlag</label>
           <input
             type='text'
             value={publisherB}
@@ -165,7 +165,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <label className='text-xl mr-4 text-gray-500'>Seiten</label>
           <input
             type='number'
             value={pagesB}
@@ -174,7 +174,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <label className='text-xl mr-4 text-gray-500'>Ergebnis</label>
           <input
             type='number'
             value={reslt}
@@ -183,7 +183,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <label className='text-xl mr-4 text-gray-500'>Toptitel</label>
           <input
             type='number'
             value={topTt}
@@ -192,7 +192,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <label className='text-xl mr-4 text-gray-500'>Markierung</label>
           <input
             type='number'
             value={markBk}
