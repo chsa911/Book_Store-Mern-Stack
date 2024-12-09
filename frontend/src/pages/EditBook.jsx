@@ -9,7 +9,7 @@ const EditBook = () => {
             /*bookfields12*/
   const [author, setAuthor] = useState('');
   const [keyw1, setKeyw1] = useState('');
-  const [kw1Pos, setkw1Pos] = useState('');
+  const [kw1Pos, setKw1Pos] = useState('');
   const [keyw2, setKeyw2] = useState('');
   const [kw2Pos, setKw2Pos] = useState('');
   const [keyw3, setKeyw3] = useState('');
@@ -32,15 +32,15 @@ const EditBook = () => {
 
         setAuthor(response.data.author);
         setKeyw1(response.data.keyw1)
-        setkw1Pos(response.data.kw1Pos)
-        setKeyw1(response.data.keyw2)
-        setkw1Pos(response.data.kw2Pos)
-        setKeyw1(response.data.keyw3)
-        setkw1Pos(response.data.kw3Pos)
-        setpublisherB(response.data.publisherB)
+        setKw1Pos(response.data.kw1Pos)
+        setKeyw2(response.data.keyw2)
+        setKw2Pos(response.data.kw2Pos)
+        setKeyw3(response.data.keyw3)
+        setKw3Pos(response.data.kw3Pos)
+        setPublisherB(response.data.publisherB)
         setPages(response.data.pages)
         setReslt(response.data.reslt)
-        settopTt(response.data.topTt)
+        setTopTt(response.data.topTt)
         setMark(response.data.mark)
 
         setLoading(false);

@@ -93,7 +93,7 @@ const CreateBooks = () => {
           <input
             type='text'
             value={kw1Pos}
-            onChange={(e) => setkw1Pos(e.target.value)}
+            onChange={(e) => setKw1Pos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
@@ -112,7 +112,7 @@ const CreateBooks = () => {
           <input
             type='text'
             value={kw2Pos}
-            onChange={(e) => setkw2Pos(e.target.value)}
+            onChange={(e) => setKw2Pos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
@@ -131,7 +131,7 @@ const CreateBooks = () => {
           <input
             type='text'
             value={kw3Pos}
-            onChange={(e) => setkw3Pos(e.target.value)}
+            onChange={(e) => setKw3Pos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
@@ -167,7 +167,7 @@ const CreateBooks = () => {
           <input
             type='number'
             value={topTt}
-            onChange={(e) => settopTt(e.target.value)}
+            onChange={(e) => setTopTt(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>

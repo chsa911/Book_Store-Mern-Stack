@@ -41,14 +41,14 @@ const BooksTable = ({ books }) => {
                     <th className='border border-slate-600 rounded-md max-md:hidden'>
 Tt.
           </th>
-                    <th className='border border-slate-600 rounded-md max-md:hidden'>
+{/*                    <th className='border border-slate-600 rounded-md max-md:hidden'>
 Ed.
           </th>   <th className='border border-slate-600 rounded-md max-md:hidden'>
                 Vw.
                           </th> <th className='border border-slate-600 rounded-md max-md:hidden'>
 Vfd.
           </th>
-  <th className='border border-slate-600 rounded-md max-md:hidden'>
+ */} <th className='border border-slate-600 rounded-md max-md:hidden'>
 Mk.
           </th>
 
@@ -92,14 +92,14 @@ Mk.
                 {book.reslt}
                       </td> <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.topTitel}
-            </td> <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+           </td>{/*  <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.entdat}
             </td> <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.voewuerdig}
             </td> <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.voedatum}
             </td>
-             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+          */}   <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.mark}
             </td>
             <td className='border border-slate-700 rounded-md text-center'>
