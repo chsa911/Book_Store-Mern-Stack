@@ -23,6 +23,10 @@ const bookSchema = mongoose.Schema(
       type: Number,
       required: true,
     },
+    publisherB: {
+          type: String,
+          required: true,
+        },
 
   },
   {

@@ -10,20 +10,49 @@ const BooksTable = ({ books }) => {
 
       <thead>
         <tr>
-          <th className='border border-slate-600 rounded-md'>No</th>
-          <th className='border border-slate-600 rounded-md'>Autor</th>
+          <th className='border border-slate-600 rounded-md'>N</th>
+          <th className='border border-slate-600 rounded-md'>Aut</th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
-            Keyword
+            K1
           </th>
              <th className='border border-slate-600 rounded-md max-md:hidden'>
-            KwPosition
+            P
           </th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
-            Verlag          </th>
-          <th className='border border-slate-600 rounded-md max-md:hidden'>
-            Pages
+            K2
           </th>
-          <th className='border border-slate-600 rounded-md'>Operations</th>
+             <th className='border border-slate-600 rounded-md max-md:hidden'>
+            P
+          </th>
+          <th className='border border-slate-600 rounded-md max-md:hidden'>
+            K3
+          </th>
+             <th className='border border-slate-600 rounded-md max-md:hidden'>
+            P.
+          </th>
+          <th className='border border-slate-600 rounded-md max-md:hidden'>
+            Ver.          </th>
+          <th className='border border-slate-600 rounded-md max-md:hidden'>
+            St.
+          </th>
+                    <th className='border border-slate-600 rounded-md max-md:hidden'>
+            E.
+          </th>
+                    <th className='border border-slate-600 rounded-md max-md:hidden'>
+Tt.
+          </th>
+                    <th className='border border-slate-600 rounded-md max-md:hidden'>
+Ed.
+          </th>   <th className='border border-slate-600 rounded-md max-md:hidden'>
+                Vw.
+                          </th> <th className='border border-slate-600 rounded-md max-md:hidden'>
+Vfd.
+          </th>
+  <th className='border border-slate-600 rounded-md max-md:hidden'>
+Mk.
+          </th>
+
+          <th className='border border-slate-600 rounded-md'>Bear.</th>
         </tr>
       </thead>
  {/*bookfields1*/}
