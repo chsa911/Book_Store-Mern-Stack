@@ -79,7 +79,7 @@ const CreateBooks = () => {
                </div>
 
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Keyword</label>
+          <label className='text-xl mr-4 text-gray-500'>Keyword1</label>
           <input
             type='text'
             value={keyw1}
@@ -88,7 +88,7 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>kwPos</label>
+          <label className='text-xl mr-4 text-gray-500'>Kw1Pos</label>
           <input
             type='text'
             value={kw1Pos}
@@ -98,7 +98,7 @@ const CreateBooks = () => {
         </div>
 
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Keyword</label>
+          <label className='text-xl mr-4 text-gray-500'>Keyword2</label>
           <input
             type='text'
             value={keyw2}
@@ -107,7 +107,7 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>kwPos</label>
+          <label className='text-xl mr-4 text-gray-500'>Kw2Pos</label>
           <input
             type='text'
             value={kw2Pos}
@@ -117,7 +117,7 @@ const CreateBooks = () => {
         </div>
 
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Keyword</label>
+          <label className='text-xl mr-4 text-gray-500'>Keyword3</label>
           <input
             type='text'
             value={keyw3}
@@ -126,7 +126,7 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>kwPos</label>
+          <label className='text-xl mr-4 text-gray-500'>Kw3Pos</label>
           <input
             type='text'
             value={kw3Pos}
@@ -135,7 +135,7 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Publisher</label>
+          <label className='text-xl mr-4 text-gray-500'>Verlag</label>
           <input
             type='text'
             value={publisherB}
@@ -144,7 +144,7 @@ const CreateBooks = () => {
         />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <label className='text-xl mr-4 text-gray-500'>Seiten</label>
           <input
             type='number'
             value={pages}
@@ -153,7 +153,7 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <label className='text-xl mr-4 text-gray-500'>Ergebnis</label>
           <input
             type='number'
             value={reslt}
@@ -162,7 +162,7 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <label className='text-xl mr-4 text-gray-500'>TopTitel</label>
           <input
             type='number'
             value={topTt}
@@ -171,7 +171,7 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <label className='text-xl mr-4 text-gray-500'>Markierung</label>
           <input
             type='number'
             value={mark}

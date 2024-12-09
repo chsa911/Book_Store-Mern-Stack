@@ -17,19 +17,19 @@ const bookSchema = mongoose.Schema (
         },
      keyw2: {
       type: String,
-      required: true,
+      required: false,
     },
     kw2Pos: {
           type: Number,
-          required: true,
+          required: false,
         },
         keyw3: {
       type: String,
-      required: true,
+      required: false,
     },
     kw3Pos: {
           type: Number,
-          required: true,
+          required: false,
         },
     publisherB: {
       type: String,
@@ -41,7 +41,7 @@ const bookSchema = mongoose.Schema (
     },
     reslt: {
           type: String,
-          required: true,
+          required: false,
         },
 topTt: {
           type: String,
