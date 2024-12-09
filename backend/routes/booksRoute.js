@@ -30,12 +30,22 @@ router.post('/', async (request, response) => {
       });
     }
     const newBook = {
-      /*bookfields4*/
-      keyw: request.body.keyw,
-      kwPosition: request.body.kwPosition,
+      /*bookfields3*/
       author: request.body.author,
+      keyw1: request.body.keyw,
+      kw1Pos: request.body.kwPosition,
+            keyw2: request.body.keyw,
+      kw2Pos: request.body.kwPosition,
+         keyw3: request.body.keyw,
+      kw3Pos: request.body.kwPosition,
      publisherB: request.body.publisherB,
            pages: request.body.pages,
+           pages: request.body.reslt,
+           pages: request.body.toptt,
+           pages: request.body.entdat,
+           pages: request.body.voewuerd,
+           pages: request.body.voedatum,
+           pages: request.body.mark,
     };
 
     const book = await Book.create(newBook);

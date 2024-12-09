@@ -51,7 +51,7 @@ entdat: {
           type: Number,
           required: false,
         },
-vowwuwrd: {
+voewuwrd: {
           type: String,
           required: false,
         },
