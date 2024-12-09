@@ -15,7 +15,7 @@ const bookSchema = mongoose.Schema (
           type: Number,
           required: true,
         },
-     keyw2: {
+    keyw2: {
       type: String,
       required: false,
     },
@@ -23,7 +23,7 @@ const bookSchema = mongoose.Schema (
           type: Number,
           required: false,
         },
-        keyw3: {
+    keyw3: {
       type: String,
       required: false,
     },

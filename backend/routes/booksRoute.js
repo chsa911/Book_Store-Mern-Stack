@@ -17,7 +17,7 @@ router.post('/', async (request, response) => {
       !request.body.kw3Pos ||
       !request.body.publisherB ||
       !request.body.pagesB ||
-        !request.body.reslt ||
+      !request.body.reslt ||
       !request.body.topTt  ||
     /*     !request.body.entdat ||
       !request.body.voewuerd ||
@@ -35,19 +35,19 @@ router.post('/', async (request, response) => {
       authorB: request.body.authorB,
       keyw1: request.body.keyw1,
       kw1Pos: request.body.kw1Pos,
-            keyw2: request.body.keyw2,
+      keyw2: request.body.keyw2,
       kw2Pos: request.body.kw2Pos,
-         keyw3: request.body.keyw3,
+      keyw3: request.body.keyw3,
       kw3Pos: request.body.kw3Pos,
-     publisherB: request.body.publisherB,
-           pagesB: request.body.pagesB,
-           reslt: request.body.reslt,
-           topTt: request.body.topTt,
+      publisherB: request.body.publisherB,
+      pagesB: request.body.pagesB,
+      reslt: request.body.reslt,
+      topTt: request.body.topTt,
          /*  pages: request.body.entDat,
            pages: request.body.voewuerd,
            pages: request.body.voedatum,
            */
-           markB: request.body.markB,
+      markBk: request.body.markBk,
     };
 
     const book = await Book.create(newBook);
@@ -108,7 +108,7 @@ router.put('/:id', async (request, response) => {
           !request.body.voewuerd ||
           !request.body.voedatum||
 
-      */    !request.body.markB
+      */    !request.body.markBk
     ) {
       return response.status(400).send({
 
