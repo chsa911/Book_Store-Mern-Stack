@@ -7,7 +7,7 @@ const bookSchema = mongoose.Schema(
           type: String,
           required: true,
         },
-    title: {
+    keyw: {
       type: String,
       required: true,
     },

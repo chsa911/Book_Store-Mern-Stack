@@ -39,7 +39,7 @@ const ShowBook = () => {
                   /*bookfields14*/
   <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Keyword</span>
-            <span>{book.title}</span>
+            <span>{book.keyw}</span>
           </div>
   <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Kwposition</span>

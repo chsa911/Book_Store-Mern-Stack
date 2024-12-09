@@ -8,7 +8,7 @@ router.post('/', async (request, response) => {
   try {
     if (
       /*bookfields2*/
-      !request.body.title ||
+      !request.body.keyw ||
       !request.body.kwPosition ||
       !request.body.author ||
       !request.body.publisherB ||
@@ -21,7 +21,7 @@ router.post('/', async (request, response) => {
     }
     const newBook = {
       /*bookfields4*/
-      title: request.body.title,
+      keyw: request.body.keyw,
       kwPosition: request.body.kwPosition,
       author: request.body.author,
      publisherB: request.body.publisherB,
@@ -71,7 +71,7 @@ router.put('/:id', async (request, response) => {
   try {
     if (
      /*bookfields5*/
-      !request.body.title ||
+      !request.body.keyw ||
       !request.body.kwPosition ||
       !request.body.author ||
       !request.body.publisherB ||

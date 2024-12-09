@@ -6,41 +6,45 @@ import { MdOutlineAddBox, MdOutlineDelete } from 'react-icons/md';
 const BooksTable = ({ books }) => {
   return (
     <table className='w-full border-separate border-spacing-2'>
+ {/*bookfields11*/}
+
       <thead>
         <tr>
           <th className='border border-slate-600 rounded-md'>No</th>
-          <th className='border border-slate-600 rounded-md'>Author</th>
+          <th className='border border-slate-600 rounded-md'>Autor</th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
             Keyword
           </th>
-          <th className='border border-slate-600 rounded-md max-md:hidden'>
-            Publisher
+             <th className='border border-slate-600 rounded-md max-md:hidden'>
+            KwPosition
           </th>
+          <th className='border border-slate-600 rounded-md max-md:hidden'>
+            Verlag          </th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
             Pages
           </th>
           <th className='border border-slate-600 rounded-md'>Operations</th>
         </tr>
       </thead>
-      <tbody>
+ {/*bookfields1*/}
 
+      <tbody>
         {books.map((book, index) => (
           <tr key={book._id} className='h-8'>
             <td className='border border-slate-700 rounded-md text-center'>
               {index + 1}
             </td>
-          {/*bookfields6*/}
             <td className='border border-slate-700 rounded-md text-center'>
               {book.author}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-              {book.title}
+              {book.keyw}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-              {book.publisherB}
-            </td>
-<td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.kwPosition}
+            </td>
+ <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.publisherB}
             </td>
 
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>

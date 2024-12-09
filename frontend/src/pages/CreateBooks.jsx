@@ -8,7 +8,7 @@ import { useSnackbar } from 'notistack';
 const CreateBooks = () => {
            /*bookfields7*/
 
-  const [title, setTitle] = useState('');
+  const [keyw, setkeyw] = useState('');
   const [author, setAuthor] = useState('');
   const [publisherB, setPublisherB] = useState('');
   const [kwPosition, setKwPosition] = useState('');
@@ -21,7 +21,7 @@ const CreateBooks = () => {
     const data = {
                /*bookfields8*/
 
-      title,
+      keyw,
       author,
       kwPosition,
       publisherB,
@@ -66,8 +66,8 @@ const CreateBooks = () => {
           <label className='text-xl mr-4 text-gray-500'>Keyword</label>
           <input
             type='text'
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            value={keyw}
+            onChange={(e) => setkeyw(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2 w-full'
           />
         </div>
