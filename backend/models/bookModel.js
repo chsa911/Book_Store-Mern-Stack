@@ -7,11 +7,27 @@ const bookSchema = mongoose.Schema(
           type: String,
           required: true,
         },
-    keyw: {
+    keyw1: {
       type: String,
       required: true,
     },
-    kwPosition: {
+    kw1Pos: {
+          type: Number,
+          required: true,
+        },
+     keyw2: {
+      type: String,
+      required: true,
+    },
+    kw2Pos: {
+          type: Number,
+          required: true,
+        },
+        keyw3: {
+      type: String,
+      required: true,
+    },
+    kw3Pos: {
           type: Number,
           required: true,
         },
@@ -23,9 +39,29 @@ const bookSchema = mongoose.Schema(
       type: Number,
       required: true,
     },
-    publisherB: {
+    reslt: {
           type: String,
           required: true,
+        },
+toptitel: {
+          type: String,
+          required: false,
+        },
+entdat: {
+          type: Number,
+          required: false,
+        },
+vowwuwrdig: {
+          type: String,
+          required: false,
+        },
+voedatum: {
+          type: Number,
+          required: false,
+        },
+mark: {
+          type: String,
+          required: false,
         },
 
   },

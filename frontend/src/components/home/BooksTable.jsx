@@ -55,7 +55,7 @@ Mk.
           <th className='border border-slate-600 rounded-md'>Bear.</th>
         </tr>
       </thead>
- {/*bookfields1*/}
+ {/*bookfields12*/}
 
       <tbody>
         {books.map((book, index) => (
@@ -67,10 +67,20 @@ Mk.
               {book.author}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-              {book.keyw}
+              {book.keyw1}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-              {book.kwPosition}
+              {book.kw1Pos}
+            </td>       <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.keyw2}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.kw2Pos}
+            </td>       <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.keyw3}
+            </td>
+            <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.kw3Pos}
             </td>
  <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.publisherB}
@@ -78,6 +88,19 @@ Mk.
 
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
               {book.pages}
+            </td> <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+                {book.reslt}
+                      </td> <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.topTitel}
+            </td> <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.entdat}
+            </td> <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.voewuerdig}
+            </td> <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.voedatum}
+            </td>
+             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
+              {book.mark}
             </td>
             <td className='border border-slate-700 rounded-md text-center'>
               <div className='flex justify-center gap-x-4'>
