@@ -36,7 +36,7 @@ const ShowBook = () => {
             <span>{book._id}</span>
           </div>
 
-                  /*bookfields16*/
+                  {/*bookfields16*/}
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Author</span>
             <span>{book.authorB}</span>
