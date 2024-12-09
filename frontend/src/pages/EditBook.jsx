@@ -92,11 +92,21 @@ const EditBook = () => {
 
       <div className='flex flex-col border-2 border-sky-400 rounded-xl w-[600px] p-4 mx-auto'>
         <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Author</label>
+          <input
+            type='text'
+            value={author}
+            onChange={(e) => setAuthor(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2  w-full '
+          />
+        </div>
+
+        <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>Keyword</label>
           <input
             type='text'
-            value={keyw}
-            onChange={(e) => setKeyw(e.target.value)}
+            value={keyw1}
+            onChange={(e) => setKeyw1(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2 w-full'
           />
         </div>
@@ -104,18 +114,45 @@ const EditBook = () => {
           <label className='text-xl mr-4 text-gray-500'>kwPos</label>
           <input
             type='text'
-            value={kwPos}
-            onChange={(e) => setkwPos(e.target.value)}
+            value={kw1Pos}
+            onChange={(e) => setKw1Pos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2 w-full'
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Author</label>
+          <label className='text-xl mr-4 text-gray-500'>Keyword</label>
           <input
             type='text'
-            value={author}
-            onChange={(e) => setAuthor(e.target.value)}
-            className='border-2 border-gray-500 px-4 py-2  w-full '
+            value={keyw2}
+            onChange={(e) => setKeyw2(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2 w-full'
+          />
+        </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>kwPos</label>
+          <input
+            type='text'
+            value={kw2Pos}
+            onChange={(e) => setKw2Pos(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2 w-full'
+          />
+        </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Keyword</label>
+          <input
+            type='text'
+            value={keyw3}
+            onChange={(e) => setKeyw3(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2 w-full'
+          />
+        </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>kwPos</label>
+          <input
+            type='text'
+            value={kw3Pos}
+            onChange={(e) => setKw3Pos(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2 w-full'
           />
         </div>
         <div className='my-4'>
@@ -133,6 +170,33 @@ const EditBook = () => {
             type='number'
             value={pages}
             onChange={(e) => setPages(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2  w-full '
+          />
+        </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <input
+            type='number'
+            value={reslt}
+            onChange={(e) => setReslt(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2  w-full '
+          />
+        </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <input
+            type='number'
+            value={topTt}
+            onChange={(e) => setTopTt(e.target.value)}
+            className='border-2 border-gray-500 px-4 py-2  w-full '
+          />
+        </div>
+        <div className='my-4'>
+          <label className='text-xl mr-4 text-gray-500'>Pages</label>
+          <input
+            type='number'
+            value={mark}
+            onChange={(e) => setMark(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
