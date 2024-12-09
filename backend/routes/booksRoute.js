@@ -30,7 +30,7 @@ router.post('/', async (request, response) => {
       });
     }
     const newBook = {
-      /*bookfields3*/
+      /*bookfields4*/
       author: request.body.author,
       keyw1: request.body.keyw,
       kw1Pos: request.body.kwPosition,
@@ -91,11 +91,21 @@ router.put('/:id', async (request, response) => {
   try {
     if (
      /*bookfields5*/
-      !request.body.keyw ||
-      !request.body.kwPosition ||
-      !request.body.author ||
-      !request.body.publisherB ||
-      !request.body.pages
+    !request.body.author ||
+          !request.body.keyw1 ||
+          !request.body.kw1Pos ||
+          !request.body.keyw2 ||
+          !request.body.kw2Pos ||
+          !request.body.keyw3 ||
+          !request.body.kw3Pos ||
+          !request.body.publisherB ||
+          !request.body.pages ||
+            !request.body.reslt ||
+          !request.body.toptt  ||
+             !request.body.entdat ||
+          !request.body.voewuerd ||
+          !request.body.voedatum||
+          !request.body.mark
     ) {
       return response.status(400).send({
 
