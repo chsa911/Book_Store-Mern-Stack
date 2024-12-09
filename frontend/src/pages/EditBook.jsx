@@ -111,7 +111,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>kw1Pos</label>
+          <label className='text-xl mr-4 text-gray-500'>Kw 1 Position</label>
           <input
             type='text'
             value={kw1Pos}
@@ -129,7 +129,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>kw2Pos</label>
+          <label className='text-xl mr-4 text-gray-500'>Kw2 Position</label>
           <input
             type='text'
             value={kw2Pos}
@@ -138,7 +138,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Keyword3</label>
+          <label className='text-xl mr-4 text-gray-500'>Keyword3 </label>
           <input
             type='text'
             value={keyw3}
@@ -147,7 +147,7 @@ const EditBook = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>kw3Pos</label>
+          <label className='text-xl mr-4 text-gray-500'>Kw3 Position</label>
           <input
             type='text'
             value={kw3Pos}
