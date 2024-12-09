@@ -16,7 +16,7 @@ const BookModal = ({ book, onClose }) => {
           className='absolute right-6 top-6 text-3xl text-red-600 cursor-pointer'
           onClick={onClose}
         />
-        /*bookfields7*/
+        /*  bookfields7*/
              <div className='flex justify-start items-center gap-x-2'>
                 <BiUserCircle className='text-red-300 text-2xl' />
                 <h2 className='my-1'>{book.author}</h2>

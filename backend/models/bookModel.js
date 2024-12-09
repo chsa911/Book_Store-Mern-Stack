@@ -43,22 +43,22 @@ const bookSchema = mongoose.Schema (
           type: String,
           required: true,
         },
-toptt: {
+topTt: {
           type: String,
           required: false,
         },
-entdat: {
+/*entDat: {
           type: Number,
           required: false,
         },
-voewuwrd: {
+voewrd: {
           type: String,
           required: false,
         },
 voedatum: {
           type: Number,
           required: false,
-        },
+        },*/
 mark: {
           type: String,
           required: false,

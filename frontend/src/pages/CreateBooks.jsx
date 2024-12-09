@@ -6,26 +6,43 @@ import { useNavigate } from 'react-router-dom';
 import { useSnackbar } from 'notistack';
 
 const CreateBooks = () => {
-           /*bookfields7*/
-
-  const [keyw, setKeyw] = useState('');
+           /*bookfields9*/
   const [author, setAuthor] = useState('');
+
+  const [keyw, setKeyw1] = useState('');
+  const [kw1Pos, setKw1Pos] = useState('');
+  const [keyw2, setKeyw2] = useState('');
+  const [kw2Pos, setKw2Pos] = useState('');
+  const [keyw3, setKeyw3] = usveState('');
+  const [kw3Pos, setKw3Pos] = useState('');
   const [publisherB, setPublisherB] = useState('');
-  const [kwPosition, setKwPosition] = useState('');
   const [pages, setPages] = useState('');
+  const [reslt, setReslt] = useState('');
+  const [toptt, setTopTt] = useState('');
+  /*const [entDat, setEntDat] = useState('');
+  const [voewrd, setVoewrd] = useState('');
+  */
+  const [mark, setMark] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar();
 
   const handleSaveBook = () => {
     const data = {
-               /*bookfields8*/
+               /*bookfields10*/
 
-      keyw,
       author,
-      kwPosition,
+      keyw1,
+      kw1Pos,
+      keyw2,
+      kw2Pos,
+      keyw3,
+      kw3Pos,
       publisherB,
       pages,
+      reslt,
+      topTt,
+      mark,
     };
     setLoading(true);
     axios
@@ -47,7 +64,7 @@ const CreateBooks = () => {
     <div className='p-4'>
       <BackButton />
       <h1 className='text-3xl my-4'>Create Book</h1>
-      {/*bookfields9*/}
+      {/*bookfields11*/}
       {loading ? <Spinner /> : ''}
 
 
@@ -72,11 +89,11 @@ const CreateBooks = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>KwPosition</label>
+          <label className='text-xl mr-4 text-gray-500'>kwPos</label>
           <input
             type='text'
-            value={kwPosition}
-            onChange={(e) => setKwPosition(e.target.value)}
+            value={kwPos}
+            onChange={(e) => setkwPos(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>

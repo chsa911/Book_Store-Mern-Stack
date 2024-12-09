@@ -19,25 +19,26 @@ router.post('/', async (request, response) => {
       !request.body.pages ||
         !request.body.reslt ||
       !request.body.toptt  ||
-         !request.body.entdat ||
+    /*     !request.body.entdat ||
       !request.body.voewuerd ||
       !request.body.voedatum||
+      */
       !request.body.mark
     ) {
       return response.status(400).send({
       /*bookfields3*/
-        message: 'Send all required fields: author, keyword, kwposition, publisher, pages',
+        message: 'Send all required fields: author, keyword, kwPos, publisher, pages',
       });
     }
     const newBook = {
       /*bookfields4*/
       author: request.body.author,
       keyw1: request.body.keyw,
-      kw1Pos: request.body.kwPosition,
+      kw1Pos: request.body.kwPos,
             keyw2: request.body.keyw,
-      kw2Pos: request.body.kwPosition,
+      kw2Pos: request.body.kwPos,
          keyw3: request.body.keyw,
-      kw3Pos: request.body.kwPosition,
+      kw3Pos: request.body.kwPos,
      publisherB: request.body.publisherB,
            pages: request.body.pages,
            pages: request.body.reslt,
@@ -109,7 +110,7 @@ router.put('/:id', async (request, response) => {
     ) {
       return response.status(400).send({
 
-       /*bookfields6*/ message: 'Send all required fields: author, keyword, kwposition,  publisher, pages',
+       /*bookfields6*/ message: 'Send all required fields: author, keyword, kwPos,  publisher, pages',
       });
     }
 
