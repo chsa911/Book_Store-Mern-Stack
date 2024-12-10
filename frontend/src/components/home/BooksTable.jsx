@@ -3,7 +3,7 @@ import { AiOutlineEdit } from 'react-icons/ai';
 import { BsInfoCircle } from 'react-icons/bs';
 import { MdOutlineAddBox, MdOutlineDelete } from 'react-icons/md';
 
-const BooksTable = ({booksfi}) => {
+const BooksTable = ({books}) => {
   return (
     <table className='w-full border-separate border-spacing-2'>
  {/*bookfields17*/}
