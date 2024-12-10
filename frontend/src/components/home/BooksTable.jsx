@@ -3,6 +3,15 @@ import { AiOutlineEdit } from 'react-icons/ai';
 import { BsInfoCircle } from 'react-icons/bs';
 import { MdOutlineAddBox, MdOutlineDelete } from 'react-icons/md';
 
+
+const onHeaderClick = () => {
+      return {
+        onClick: () => {
+
+        },
+      };
+  };
+
 const BooksTable = ({books}) => {
   return (
     <table className='w-full border-separate border-spacing-2'>
@@ -11,7 +20,7 @@ const BooksTable = ({books}) => {
       <thead>
         <tr>
           <th className='border border-slate-600 rounded-md'>N</th>
-          <th className='border border-slate-600 rounded-md'>Aut</th>
+          <th clickableHeader={onHeaderClick} className='border border-slate-600 rounded-md'>Aut</th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
             K1
           </th>
