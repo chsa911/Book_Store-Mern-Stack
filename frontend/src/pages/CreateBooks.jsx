@@ -18,9 +18,6 @@ const CreateBooks = () => {
   const [pagesB, setPagesB] = useState('');
   const [reslt, setReslt] = useState('');
   const [topTt, setTopTt] = useState('');
-  /*const [entDat, setEntDat] = useState('');
-  const [voewrd, setVoewrd] = useState('');
-  */
   const [markBk, setMarkBk] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
