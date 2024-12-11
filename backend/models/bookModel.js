@@ -14,6 +14,7 @@ const bookSchema = mongoose.Schema (
     pagesB: {type: Number,},
     reslt: {type: String,},
     topTt: {type: String,},
+   /* entDat: {type: Date,},*/
     markBk: {type: String,},
   },
   {

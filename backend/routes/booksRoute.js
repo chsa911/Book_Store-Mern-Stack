@@ -19,10 +19,7 @@ router.post('/', async (request, response) => {
       !request.body.pagesB ||
       !request.body.reslt ||
       !request.body.topTt  ||
-    /*     !request.body.entdat ||
-      !request.body.voewuerd ||
-      !request.body.voedatum||
-      */
+       !request.body.entDat ||
       !request.body.markBk
     ) {
       return response.status(400).send({
@@ -43,10 +40,7 @@ router.post('/', async (request, response) => {
       pagesB: request.body.pagesB,
       reslt: request.body.reslt,
       topTt: request.body.topTt,
-         /*  pages: request.body.entDat,
-           pages: request.body.voewuerd,
-           pages: request.body.voedatum,
-           */
+      entDat: request.body.entDat,
       markBk: request.body.markBk,
     };
 
@@ -62,8 +56,8 @@ router.post('/', async (request, response) => {
 // Route for Get All Books from database
 router.get('/', async (request, response) => {
   try {
-    const books = await Book.find({}).sort("keyw1");
-
+    const books = await Book.find().sort('-entDat');
+/*find({}, {sort: {datefield: 1}}).toArray(function(err, docs) {...});*/
     return response.status(200).json({
       count: books.length,
       data: books,
@@ -104,11 +98,8 @@ router.put('/:id', async (request, response) => {
           !request.body.pagesB ||
             !request.body.reslt ||
           !request.body.topTt  ||
-    /*        !request.body.entdat ||
-          !request.body.voewuerd ||
-          !request.body.voedatum||
-
-      */    !request.body.markBk
+          !request.body.entDat  ||
+        !request.body.markBk
     ) {
       return response.status(400).send({
 
