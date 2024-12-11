@@ -142,7 +142,7 @@ router.delete('/:id', async (request, response) => {
 // Route for searching books
 router.get('/', async (request, response) => {
   try {
-    const books = await Book.find().sort('-entDat');
+    const books = await Book.find(searchTerm).sort('-entDat').limit(10);
 /*find({}, {sort: {datefield: 1}}).toArray(function(err, docs) {...});*/
     return response.status(200).json({
       count: books.length,
