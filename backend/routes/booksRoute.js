@@ -139,5 +139,18 @@ router.delete('/:id', async (request, response) => {
     response.status(500).send({ message: error.message });
   }
 });
-
+// Route for searching books
+router.get('/', async (request, response) => {
+  try {
+    const books = await Book.find().sort('-entDat');
+/*find({}, {sort: {datefield: 1}}).toArray(function(err, docs) {...});*/
+    return response.status(200).json({
+      count: books.length,
+      data: books,
+    });
+  } catch (error) {
+    console.log(error.message);
+    response.status(500).send({ message: error.message });
+  }
+});
 export default router;
