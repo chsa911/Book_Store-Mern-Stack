@@ -20,16 +20,10 @@ const BooksTable = ({books}) => {
       <thead>
         <tr>
           <th className='border border-slate-600 rounded-md'>N</th>
-         { /*<th clickableHeader={onHeaderClick} className='border border-slate-600 rounded-md'>Aut</th>*/}
-          <th className='border border-slate-600 rounded-md max-md:hidden'>
-            K1
-          </th>
-             <th className='border border-slate-600 rounded-md max-md:hidden'>
-            P
-          </th>
-          <th className='border border-slate-600 rounded-md max-md:hidden'>
-            K2
-          </th>
+          <th className='border border-slate-600 rounded-md'>Aut</th>
+          <th className='border border-slate-600 rounded-md max-md:hidden'>K1</th>
+             <th className='border border-slate-600 rounded-md max-md:hidden'>P</th>
+          <th className='border border-slate-600 rounded-md max-md:hidden'>K2</th>
              <th className='border border-slate-600 rounded-md max-md:hidden'>
             P
           </th>
