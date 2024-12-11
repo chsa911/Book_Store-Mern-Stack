@@ -13,6 +13,7 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [showType, setShowType] = useState('table');
   const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(true);
