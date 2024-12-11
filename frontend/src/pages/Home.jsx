@@ -14,6 +14,16 @@ const Home = () => {
   const [showType, setShowType] = useState('table');
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
+    const handleSubmit = (e) => {
+      e.preventDefault();
+
+      const urlParams = new URLSearchParams(window.location.search);
+      urlParams.set("searchTerm", searchTerm);
+      const searchQuery = urlParams.toString();
+      navigate('/search?${searchQuery}');
+      };
+
+
 
   useEffect(() => {
     setLoading(true);
@@ -51,7 +61,7 @@ const Home = () => {
           <MdOutlineAddBox className='text-sky-800 text-4xl' />
         </Link>
       </div>
-     <form className="bg-slate-100 p-3   rounded-lg flex items center">
+     <form onSubmit={handleSubmit} className="bg-slate-100 p-3   rounded-lg flex items center">
        <div className='my-4'>
                        <input
                          type='text'
