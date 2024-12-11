@@ -12,6 +12,7 @@ const Home = () => {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showType, setShowType] = useState('table');
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     setLoading(true);
@@ -55,8 +56,8 @@ const Home = () => {
                          type='text'
                          placeholder='Search..'
                          className="bg-transparent focus:outline-none w-24 sm:w-64"
-       /*                  value={searchTerm}
-                         onChange={(e) => setSearchTerm(e.target.value)}*/
+                         value={searchTerm}
+                         onChange={(e) => setSearchTerm(e.target.value)}
                           />
                      </div>
 </form>
