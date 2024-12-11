@@ -49,6 +49,18 @@ const Home = () => {
           <MdOutlineAddBox className='text-sky-800 text-4xl' />
         </Link>
       </div>
+     <form className="bg-slate-100 p-3   rounded-lg flex items center">
+       <div className='my-4'>
+                       <input
+                         type='text'
+                         placeholder='Search..'
+                         className="bg-transparent focus:outline-none w-24 sm:w-64"
+       /*                  value={searchTerm}
+                         onChange={(e) => setSearchTerm(e.target.value)}*/
+                          />
+                     </div>
+</form>
+
       {loading ? (
         <Spinner />
       ) : showType === 'table' ? (
