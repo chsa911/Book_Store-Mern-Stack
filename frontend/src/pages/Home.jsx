@@ -24,7 +24,7 @@ const Home = () => {
       };
 useEffect(() => {
     const URLParams = new URLSearchParams(location.search);
- /*   const searchTermFromURL = urlParams.get('searchTerm');
+ /*   const searchTermFromURL = urlParams.get('searchTerm');'/'
     if (searchTermFromURL){
         setSearchTerm(searchTermFromURL);
         }*/
