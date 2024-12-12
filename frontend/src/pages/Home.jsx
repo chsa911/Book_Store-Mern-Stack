@@ -14,18 +14,23 @@ const Home = () => {
   const [showType, setShowType] = useState('table');
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
-    const handleSubmit = (e) => {
-      e.preventDefault();
 
+  const handleSubmit = (e) => {
+      e.preventDefault();
       const urlParams = new URLSearchParams(window.location.search);
       urlParams.set("searchTerm", searchTerm);
       const searchQuery = urlParams.toString();
       navigate('/search?${searchQuery}');
       };
+useEffect(() => {
+    const URLParams = new URLSearchParams(location.search);
+ /*   const searchTermFromURL = urlParams.get('searchTerm');
+    if (searchTermFromURL){
+        setSearchTerm(searchTermFromURL);
+        }*/
+    }, [location.search]);
 
-
-
-  useEffect(() => {
+useEffect(() => {
     setLoading(true);
     axios
       .get('http://localhost:5555/books')
@@ -38,7 +43,17 @@ const Home = () => {
         setLoading(false);
       });
   }, []);
-
+     <form onSubmit={handleSubmit} className="bg-slate-100 p-3   rounded-lg flex items center">
+                 <div className='my-4'>
+                                 <input
+                                   type='text'
+                                   placeholder='Search..'
+                                   className="bg-transparent focus:outline-none w-24 sm:w-64"
+                                   value={searchTerm}
+                                   onChange={(e) => setSearchTerm(e.target.value)}
+                                    />
+                               </div>
+          </form>
   return (
     <div className='p-4'>
       <div className='flex justify-center items-center gap-x-4'>
@@ -61,19 +76,10 @@ const Home = () => {
           <MdOutlineAddBox className='text-sky-800 text-4xl' />
         </Link>
       </div>
-     <form onSubmit={handleSubmit} className="bg-slate-100 p-3   rounded-lg flex items center">
-       <div className='my-4'>
-                       <input
-                         type='text'
-                         placeholder='Search..'
-                         className="bg-transparent focus:outline-none w-24 sm:w-64"
-                         value={searchTerm}
-                         onChange={(e) => setSearchTerm(e.target.value)}
-                          />
-                     </div>
-</form>
+
 
       {loading ? (
+
         <Spinner />
       ) : showType === 'table' ? (
         <BooksTable books={books} />
