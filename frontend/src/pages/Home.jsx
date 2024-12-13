@@ -9,7 +9,7 @@ import BooksTable from '../components/home/BooksTable';
 import BooksCard from '../components/home/BooksCard';
 
 const Home = () => {
-  const [books, setBooks] = useState([]);
+  const [bookList, setBookList] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showType, setShowType] = useState('table');
   const [searchTerm, setSearchTerm] = useState('');
@@ -33,9 +33,9 @@ useEffect(() => {
 useEffect(() => {
     setLoading(true);
     axios
-      .get('http://localhost:5555/books')
+      .get('http://localhost:5555/bookList')
       .then((response) => {
-        setBooks(response.data.data);
+        setbookList(response.data.data);
         setLoading(false);
       })
       .catch((error) => {
@@ -72,7 +72,7 @@ useEffect(() => {
       </div>
       <div className='flex justify-between items-center'>
         <h1 className='text-3xl my-8'>Books List</h1>
-        <Link to='/books/create'>
+        <Link to='/bookList/create'>
           <MdOutlineAddBox className='text-sky-800 text-4xl' />
         </Link>
       </div>
@@ -82,9 +82,9 @@ useEffect(() => {
 
         <Spinner />
       ) : showType === 'table' ? (
-        <BooksTable books={books} />
+        <BooksTable bookList={bookList} />
       ) : (
-        <BooksCard books={books} />
+        <BooksCard bookList={bookList} />
       )}
     </div>
   );

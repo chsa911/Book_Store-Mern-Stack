@@ -12,7 +12,7 @@ import { MdOutlineAddBox, MdOutlineDelete } from 'react-icons/md';
       };
   };
 */
-const BooksTable = ({books}) => {
+const BooksTable = ({bookList}) => {
   return (
     <table className='w-full border-separate border-spacing-2'>
  {/*bookfields17*/}
@@ -38,7 +38,7 @@ const BooksTable = ({books}) => {
  {/*bookfields18*/}
 
       <tbody>
-        {books.map((book, index) => (
+        {bookList.map((book, index) => (
           <tr key={book._id}     className='h-8'>
             <td className='border border-slate-700 rounded-md text-center'>
               {index + 1}
@@ -84,13 +84,13 @@ const BooksTable = ({books}) => {
             </td>
             <td className='border border-slate-700 rounded-md text-center'>
               <div className='flex justify-center gap-x-4'>
-                <Link to={`/books/details/${book._id}`}>
+                <Link to={`/bookList/details/${book._id}`}>
                   <BsInfoCircle className='text-2xl text-green-800' />
                 </Link>
-                <Link to={`/books/edit/${book._id}`}>
+                <Link to={`/bookList/edit/${book._id}`}>
                   <AiOutlineEdit className='text-2xl text-yellow-600' />
                 </Link>
-                <Link to={`/books/delete/${book._id}`}>
+                <Link to={`/bookList/delete/${book._id}`}>
                   <MdOutlineDelete className='text-2xl text-red-600' />
                 </Link>
               </div>
